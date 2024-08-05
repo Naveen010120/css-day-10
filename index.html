@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karma:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: "Roboto", sans-serif;
+ 
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            padding: 16px 0px;
+            font-size: 24px;
+            position: sticky;
+            top: 0px;
+            background-color: white;
+            z-index: 2;
+        }
+        h3{
+            font-weight: 400;
+            font-size: 32px;
+        }
+        img {
+            width: 95%;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            display: block;
+            /* height: 100vh; */
+            padding: 20px;
+        }
+
+        .hidden {
+            height: 40vh;
+            width: 40vw;
+            display: none;
+            z-index: 2;
+
+        }
+
+        .icon:focus-within+.hidden {
+            display: block;
+            background-color: white;
+            
+        }
+        button:hover{
+            border: 1px solid;
+        }
+        .food:hover,.mail:hover{
+           text-decoration: underline 5px rgb(228, 93, 52);
+           transition: 0.8s;
+
+
+        }
+    
+        .container {
+            margin: 10px 30px;
+            /* box-shadow: 20px 10px 20px #121;
+            border-radius: 20px; */
+        }
+
+        .container-text {
+            text-align: center;
+
+        }
+
+        button {
+            border: none;
+            font-size: 24px;
+            background-color: white;
+            
+
+        }
+        @media screen and (min-width:500px){
+            main{
+                display: grid;
+                grid-template-areas: 'a a';
+            }
+        }
+        @media screen and (min-width:1000px){
+            main{
+                display: grid;
+                grid-template-areas: 'a a a a';
+            }
+        }
+        @media screen and (min-width:600px) and (max-width:999px){
+            main{
+                display: grid;
+                grid-template-areas: 'a a a';
+            }
+        }
+      
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav><button class="icon"><i class="fa-solid fa-list"></i></button>
+            <div class="hidden">
+                <a href="#">Close Menu</a>
+                <a href="./food.html">Food</a>
+                <a href="./food.html">About</a>
+            </div>
+        </nav>
+
+        <nav class="food">My Food</nav>
+        <nav class="mail">Mail</nav>
+    </header>
+    <main>
+        <div class="container">
+            <img src="https://www.w3schools.com/w3images/sandwich.jpg" alt="">
+            <div class="container-text">
+                <h3>The Perfect Sandwich, A Real Classic</h3>
+                <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+            </div>
+        </div>
+        <div class="container">
+            <img src="https://www.w3schools.com/w3images/steak.jpg" alt="">
+            <div class="container-text">
+                <h3>Let Me Tell You About This Steak</h3>
+                <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.vvhzvzavhh </p>
+            </div>
+        </div>
+        <div class="container">
+            <img src="https://www.w3schools.com/w3images/cherries.jpg" alt="">
+            <div class="container-text">
+                <h3>Cherries, interrupted</h3>
+                <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+            </div>
+        </div>
+        <div class="container">
+            <img src="https://www.w3schools.com/w3images/wine.jpg" alt="">
+            <div class="container-text">
+                <h3>Once Again, Robust Wine and Vegetable Pasta</h3>
+                <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+            </div>
+        </div>
+        <div class="container">
+            <img src="https://www.w3schools.com/w3images/popsicle.jpg" alt="">
+            <div class="container-text">
+                <h3>All I Need Is a Popsicle</h3>
+                <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+            </div>
+        </div>
+        <div class="container">
+            <img src="https://www.w3schools.com/w3images/salmon.jpg" alt="">
+            <div class="container-text">
+                <h3>Salmon For Your Skin</h3>
+                <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+            </div>
+        </div>
+        <div class="container">
+            <img src="https://www.w3schools.com/w3images/sandwich.jpg" alt="">
+            <div class="container-text">
+                <h3>Once Again, Robust Wine and Vegetable Pasta</h3>
+                <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+            </div>
+        </div>
+        <div class="container">
+            <img src="https://www.w3schools.com/w3images/wine.jpg" alt="">
+            <div class="container-text">
+                <h3>Once Again, Robust Wine and Vegetable Pasta</h3>
+                <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
